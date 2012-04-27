@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
 
-    <string name="hello">Hello World, SmorgFrontEndActivity!</string>
     <string name="app_name">SmOrg</string>
-
+    <string name="hint1">Use Your Google Account.</string>
+	<string name="sign_in">Sign In</string>
+	<string name="sign_up">Google Me</string>
+	<string name="usr">Username:</string>
+	<string name="pw">Password:</string>
+	
+	
 </resources>

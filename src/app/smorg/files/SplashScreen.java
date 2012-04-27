@@ -1,5 +1,5 @@
 /*
- * 
+ * This class has the login secret spell 
  */
 
 package app.smorg.files;

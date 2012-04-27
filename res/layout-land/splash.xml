@@ -5,6 +5,7 @@
     android:gravity="top"
     android:id="@+id/splash"
     android:orientation="vertical" >
+    
 
     <TextView
         android:id="@+id/appName"
@@ -92,6 +93,6 @@
               android:id="@+id/b_signUp" />
      </LinearLayout>
      
-      
+    
         
 </LinearLayout>

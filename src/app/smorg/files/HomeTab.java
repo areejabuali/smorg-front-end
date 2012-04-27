@@ -1,3 +1,7 @@
+/*A class where the home tab lives
+ * 
+ */
+
 package app.smorg.files;
 
 import android.app.TabActivity;
@@ -17,23 +21,25 @@ public class HomeTab extends TabActivity {
 		TabHost tabHost = getTabHost();
 		TabSpec tabSpec;
 		// An intent for tab activity 
-		Intent intent = new Intent().setClass(this, SplashScreen.class);
+		Intent intent = new Intent();
 	
-		tabSpec = tabHost.newTabSpec("sign in").setIndicator("Timeline").setContent(intent);
+		tabSpec = tabHost.newTabSpec("sign in").setIndicator("Timeline").setContent(intent.setClass(this, SplashScreen.class));
 		tabHost.addTab(tabSpec);
 		tabHost.setCurrentTab(0);
 		
-		tabSpec = tabHost.newTabSpec("calendar").setIndicator("Calendar").setContent(intent);
+		tabSpec = tabHost.newTabSpec("tasks").setIndicator("Tasks").setContent(intent.setClass(this, SplashScreen.class));
 		tabHost.addTab(tabSpec);
 		
-		tabSpec = tabHost.newTabSpec("tasks").setIndicator("Tasks").setContent(intent);
+		tabSpec = tabHost.newTabSpec("goals").setIndicator("Goals").setContent(intent.setClass(this, SplashScreen.class));
 		tabHost.addTab(tabSpec);
 		
-		tabSpec = tabHost.newTabSpec("goals").setIndicator("Goals").setContent(intent);
+		tabSpec = tabHost.newTabSpec("notification").setIndicator("Notifications").setContent(intent.setClass(this, SplashScreen.class));
 		tabHost.addTab(tabSpec);
 		
-		tabSpec = tabHost.newTabSpec("calendar").setIndicator("Notifications").setContent(intent);
+		Intent intent2 = new Intent();
+		tabSpec = tabHost.newTabSpec("calendar").setIndicator("Calendar").setContent(intent2.setClass(this,CalendarActivity.class));
 		tabHost.addTab(tabSpec);
+		
 		
 		
 		
